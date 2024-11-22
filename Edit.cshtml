@@ -1,47 +1,41 @@
-﻿@model Sanchez_Campos_Kevin_Alexis.Models.Mascota
+﻿@model Sanchez_Campos_Kevin_Alexis.Models.Persona
 
 @{
     ViewData["Title"] = "Edit";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Edit</h1>
 
-<h4>Mascota</h4>
+<h4>Persona</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="IdMascota" class="control-label"></label>
-                <input asp-for="IdMascota" class="form-control" />
-                <span asp-validation-for="IdMascota" class="text-danger"></span>
+                <label asp-for="IdPersona" class="control-label"></label>
+                <input asp-for="IdPersona" class="form-control" />
+                <span asp-validation-for="IdPersona" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="id_dueno" class="control-label"></label>
-                <input asp-for="id_dueno" class="form-control" />
-                <span asp-validation-for="id_dueno" class="text-danger"></span>
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="id_raza" class="control-label"></label>
-                <input asp-for="id_raza" class="form-control" />
-                <span asp-validation-for="id_raza" class="text-danger"></span>
+                <label asp-for="Apellidos" class="control-label"></label>
+                <input asp-for="Apellidos" class="form-control" />
+                <span asp-validation-for="Apellidos" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="id_clasificacion" class="control-label"></label>
-                <input asp-for="id_clasificacion" class="form-control" />
-                <span asp-validation-for="id_clasificacion" class="text-danger"></span>
+                <label asp-for="Curp" class="control-label"></label>
+                <input asp-for="Curp" class="form-control" />
+                <span asp-validation-for="Curp" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="nombre" class="control-label"></label>
-                <input asp-for="nombre" class="form-control" />
-                <span asp-validation-for="nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="sexo" class="control-label"></label>
-                <input asp-for="sexo" class="form-control" />
-                <span asp-validation-for="sexo" class="text-danger"></span>
+                <label asp-for="Edad" class="control-label"></label>
+                <input asp-for="Edad" class="form-control" />
+                <span asp-validation-for="Edad" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

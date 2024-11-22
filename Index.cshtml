@@ -1,6 +1,9 @@
-﻿@model IEnumerable<Sanchez_Campos_Kevin_Alexis.Models.Mascota>
+﻿@model IEnumerable<Sanchez_Campos_Kevin_Alexis.Models.Persona>
 
-
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
 <h1>Index</h1>
 
@@ -11,57 +14,49 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.IdMascota)
+                @Html.DisplayNameFor(model => model.IdPersona)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.id_dueno)
+                @Html.DisplayNameFor(model => model.Nombre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.id_raza)
+                @Html.DisplayNameFor(model => model.Apellidos)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.id_clasificacion)
+                @Html.DisplayNameFor(model => model.Curp)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.nombre)
+                @Html.DisplayNameFor(model => model.Edad)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.sexo)
-            </th>
-
             <th></th>
         </tr>
-        <>
-
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.IdMascota)
+                    @Html.DisplayFor(modelItem => item.IdPersona)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.id_dueno)
+                    @Html.DisplayFor(modelItem => item.Nombre)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.id_raza)
+                    @Html.DisplayFor(modelItem => item.Apellidos)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.id_clasificacion)
+                    @Html.DisplayFor(modelItem => item.Curp)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.nombre)
+                    @Html.DisplayFor(modelItem => item.Edad)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.sexo)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.IdMascota }) |
+                    @Html.ActionLink("Edit", "Edit", new { id = item.IdPersona }) |
                     @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.IdMascota }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.IdPersona }) |
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
