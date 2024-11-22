@@ -1,59 +1,51 @@
-﻿@model Sanchez_Campos_Kevin_Alexis.Models.Dueno
+﻿@model Sanchez_Campos_Kevin_Alexis.Models.Mascota
 
 @{
     ViewData["Title"] = "Delete";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Delete</h1>
 
-<h3>
-    ¿Estas seguro de borrar el registro?</h3>
+<h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Dueno</h4>
+    <h4>Mascota</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdDueno)
+            @Html.DisplayNameFor(model => model.IdMascota)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdDueno)
+            @Html.DisplayFor(model => model.IdMascota)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nombre)
+            @Html.DisplayNameFor(model => model.id_dueno)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nombre)
+            @Html.DisplayFor(model => model.id_dueno)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ApellidoPaterno)
+            @Html.DisplayNameFor(model => model.id_raza)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ApellidoPaterno)
+            @Html.DisplayFor(model => model.id_raza)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ApellidoMaterno)
+            @Html.DisplayNameFor(model => model.id_clasificacion)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ApellidoMaterno)
+            @Html.DisplayFor(model => model.id_clasificacion)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telefono)
+            @Html.DisplayNameFor(model => model.nombre)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Telefono)
+            @Html.DisplayFor(model => model.nombre)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Correo)
+            @Html.DisplayNameFor(model => model.sexo)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Correo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Contrasena)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Contrasena)
+            @Html.DisplayFor(model => model.sexo)
         </dd>
     </dl>
     

@@ -1,53 +1,47 @@
-﻿@model Sanchez_Campos_Kevin_Alexis.Models.Dueno
+﻿@model Sanchez_Campos_Kevin_Alexis.Models.Mascota
 
 @{
     ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
-
 }
 
 <h1>Edit</h1>
 
-<h4>Dueno</h4>
+<h4>Mascota</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="IdDueno" class="control-label"></label>
-                <input asp-for="IdDueno" class="form-control" />
-                <span asp-validation-for="IdDueno" class="text-danger"></span>
+                <label asp-for="IdMascota" class="control-label"></label>
+                <input asp-for="IdMascota" class="form-control" />
+                <span asp-validation-for="IdMascota" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
+                <label asp-for="id_dueno" class="control-label"></label>
+                <input asp-for="id_dueno" class="form-control" />
+                <span asp-validation-for="id_dueno" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ApellidoPaterno" class="control-label"></label>
-                <input asp-for="ApellidoPaterno" class="form-control" />
-                <span asp-validation-for="ApellidoPaterno" class="text-danger"></span>
+                <label asp-for="id_raza" class="control-label"></label>
+                <input asp-for="id_raza" class="form-control" />
+                <span asp-validation-for="id_raza" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ApellidoMaterno" class="control-label"></label>
-                <input asp-for="ApellidoMaterno" class="form-control" />
-                <span asp-validation-for="ApellidoMaterno" class="text-danger"></span>
+                <label asp-for="id_clasificacion" class="control-label"></label>
+                <input asp-for="id_clasificacion" class="form-control" />
+                <span asp-validation-for="id_clasificacion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Telefono" class="control-label"></label>
-                <input asp-for="Telefono" class="form-control" />
-                <span asp-validation-for="Telefono" class="text-danger"></span>
+                <label asp-for="nombre" class="control-label"></label>
+                <input asp-for="nombre" class="form-control" />
+                <span asp-validation-for="nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Correo" class="control-label"></label>
-                <input asp-for="Correo" class="form-control" />
-                <span asp-validation-for="Correo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Contrasena" class="control-label"></label>
-                <input asp-for="Contrasena" class="form-control" />
-                <span asp-validation-for="Contrasena" class="text-danger"></span>
+                <label asp-for="sexo" class="control-label"></label>
+                <input asp-for="sexo" class="form-control" />
+                <span asp-validation-for="sexo" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
